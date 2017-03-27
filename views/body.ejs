@@ -1,10 +1,21 @@
-<h1>Funda</h1>
+<header class="navigation">
+  <nav>
+    <img class="logo" src="public/img/funda_logo.svg"/>
+    <h1>Funda Buurtchecker</h1>
+  </nav>
+  <div class="intro">
+    <img src="public/img/header_image.jpg">
+    <p>Hieronder vind je alle resultaten die overeen komen met de antwoorden van je buurtcheck</p>
+  </div>
+</header>
+<section class="results">
 <% for(var i = 0; i < funda.Objects.length; i++) {%>
+  <a href="<%= funda.Objects[i].URL %>">
   <article>
-    <header>
-      <h1><%= funda.Objects[i].Adres %></h1>
-    </header>
-    <p><%= funda.Objects[i].AangebodenSindsTekst %></p>
+    <img src="<%= funda.Objects[i].FotoMedium%>">
+    <h4><%= funda.Objects[i].Adres %></h4>
+    <p>€ <%= funda.Objects[i].Prijs.Koopprijs %></p>
   </article>
 </a>
 <% } %>
+</section>

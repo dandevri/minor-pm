@@ -10,7 +10,7 @@ if (!api_key) {
   throw new Error('Missing `API_KEY` in env.');
 }
 
-app.use(express.static('public'));
+app.use('/public', express.static('public'));
 app.set('view engine', 'ejs');
 app.set('views', 'views');
 
