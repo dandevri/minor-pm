@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <% include head.ejs %>
+  </head>
+  <body>
+    <% include header.ejs %>
+
+    <h1>Drivers</h1>
+    <% for(var i = 0; i < driver.MRData.StandingsTable.StandingsLists[0].DriverStandings.length; i++) {%>
+      <h2><%= driver.MRData.StandingsTable.StandingsLists[0].DriverStandings[i].position %></h2>
+    <% } %>
+
+  </body>
+</html>
