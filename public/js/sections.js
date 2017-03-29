@@ -42,13 +42,13 @@ var sections = {
 
     dataArray.forEach(function(standing) { // Generate list items
       document.querySelector('.list').innerHTML += `
-      <li>
+      <article>
         <h2>${standing.position}.</h2>
         <p> | </p>
         <h3>${standing.points}</h3>
         <p>${standing.Driver.givenName} ${standing.Driver.familyName}</p>
         <p class="constructor">${standing.Constructors[0].constructorId.replace(/_/g, ' ')}</p>
-      </li>`;
+      </article>`;
     });
   },
 
@@ -60,12 +60,12 @@ var sections = {
     // Fill list with data
     dataArray.forEach(function(driver, index) {
       document.querySelector('.list').innerHTML += `
-        <li>
+        <article>
           <a href="#driver/${index}">
             <h2>${driver.code}</h2>
             <p>${driver.givenName} ${driver.familyName}</p>
           </a>
-        </li>
+        </article>
       `;
     });
   },
@@ -91,10 +91,10 @@ var sections = {
     document.querySelector('.sort').innerHTML = " ";
     dataArray.forEach(function(race) {
       document.querySelector('.list').innerHTML += `
-      <li>
+      <article>
         <h2>${race.raceName}</h2>
         <p class=date>${race.date}</p>
-      </li>`;
+      </article>`;
     });
   },
 

@@ -7,11 +7,13 @@
     <% include header.ejs %>
     <% include spinner.ejs %>
 
-    <% races.forEach(function(race) { %>
-      <article>
-        <h2><%= race.raceName %></h2>
-      </article>
-    <% }) %>
+    <section class="races-server">
+      <% races.forEach(function(race) { %>
+        <article>
+          <h2><%= race.raceName %></h2>
+        </article>
+      <% }) %>
+    </section>
 
   </body>
 </html>
