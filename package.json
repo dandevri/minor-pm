@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "expose": "ngrok http 1337",
-    "build": "browserify public/js/app.js -o public/js/bundle.js --debug",
+    "build": "browserify src/js/app.js -o public/js/bundle.js --debug",
     "watchify": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
