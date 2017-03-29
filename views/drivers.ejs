@@ -7,13 +7,13 @@
     <% include header.ejs %>
     <% include spinner.ejs %>
 
-
+    <section class="drivers-server">
       <% drivers.forEach(function(driver) { %>
         <article>
           <h2><%= driver.code %></h2>
           <p><%= driver.givenName %></p>
         </article>
       <% }) %>
-
+    </section>
   </body>
 </html>

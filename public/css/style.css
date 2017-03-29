@@ -28,7 +28,6 @@ ul, ol {
 
 a {
   text-decoration: none;
-  color: white;
 }
 /* ==========================================================================
    Navigation
@@ -45,6 +44,10 @@ nav {
   background: #d31411;
 }
 
+nav a {
+  color: white;
+}
+
 nav ul {
   display: flex;
   justify-content: space-around;
@@ -57,8 +60,30 @@ nav ul li {
 /* ==========================================================================
    Navigation
    ========================================================================== */
+article {
+  display: flex;
+  align-items: baseline;
+  background-color: white;
+  padding: 2em;
+  margin: 2vh;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
 
+article > * {
+  margin: .25em;
+}
 
+.sort {
+  display: flex;
+}
+
+.sort button {
+  font-size: 1em;
+  padding: 1em;
+  flex: 1;
+  background: #fff;
+  border: none;
+}
 
 /* ==========================================================================
   Preloader
@@ -92,4 +117,35 @@ nav ul li {
  0% { opacity: 0; transform: scale(0.5); }
  50% { opacity: 1; transform: scale(1); }
  100% { opacity: 0; transform: scale(0.5); }
+}
+
+/* ==========================================================================
+  Overlay
+  ========================================================================== */
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+[hidden] {
+  display: none;
+}
+
+.overlay div {
+  width: 50%;
+  background-color: white;
+  display: block;
+}
+
+.dialog {
+  padding: 2em;
 }

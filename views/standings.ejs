@@ -6,10 +6,20 @@
   <body>
     <% include header.ejs %>
     <% include spinner.ejs %>
+    <ul class="sort"></ul>
+    <ol class="list"></ol>
 
-    <% standings.forEach(function(standing) { %>
-      <h2><%= standing.position %></h2>
-    <% }) %>
+    <section class="standings-server">
+      <% standings.forEach(function(standing) { %>
+      <article>
+        <h2><%= standing.position %></h2>
+        <p> | </p>
+        <p><%= standing.points %></p>
+        <p><%= standing.Driver.givenName %> <%= standing.Driver.familyName %></p>
+        <p><%= standing.Constructors[0].constructorId.replace(/_/g, ' ') %></p>
+      </article>
+      <% }) %>
+    </section>
 
   </body>
 </html>
