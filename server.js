@@ -1,11 +1,17 @@
 var express = require('express');
 var request = require('request');
 var dotenv = require('dotenv').config();
+var compression = require('compression');
 var app = express();
 
 var api_url_standing = process.env.API_URL_DRIVERSTANDINGS;
 var api_url_driver = process.env.API_URL_RACEDRIVERS;
 var api_url_raceschedule = process.env.API_URL_RACESCHEDULE;
+
+app.use(compression({
+	threshold: 0,
+	filter: () => true, // Compress all assets by default
+}));
 
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
