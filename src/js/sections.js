@@ -1,8 +1,13 @@
 var store = require('./store');
 
 var sections = {
+  clearList: function() {
+    var list = document.querySelector('body > section');
+    list.parentNode.removeChild(list);
+  },
 
   createStandingsList: function(sort) {
+    this.clearList();
     var dataArray = store.standingsArray;
 
     // MDN example;
@@ -53,6 +58,7 @@ var sections = {
   },
 
   createDriversList: function(dataArray) {
+    this.clearList();
     store.driversArray = dataArray; // save for later use
     // Hide other list
     document.querySelector('.list').innerHTML = " ";
@@ -71,6 +77,7 @@ var sections = {
   },
 
   createDriverOverlay: function(id) { // Create the overlay
+    this.clearList();
     var driver = store.driversArray[id];
     document.querySelector('.overlay').innerHTML = `
     <div class="dialog">
@@ -87,6 +94,7 @@ var sections = {
   },
 
   createRaceSchedule: function(dataArray) {
+    this.clearList();
     document.querySelector('.list').innerHTML = " ";
     document.querySelector('.sort').innerHTML = " ";
     dataArray.forEach(function(race) {

@@ -4,8 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "minify-css": "cleancss -o public/css/style-min.css src/css/style.css",
     "expose": "ngrok http 1337",
-    "build": "browserify src/js/app.js -o public/js/bundle.js --debug",
+    "build": "browserify src/js/app.js --debug | uglifyjs -c > public/js/bundle-min.js",
     "watchify": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -29,7 +30,9 @@
   },
   "devDependencies": {
     "browserify": "^14.1.0",
+    "clean-css-cli": "^4.0.10",
     "ngrok": "^2.2.6",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "uglify-js": "github:mishoo/UglifyJS2#harmony"
   }
 }

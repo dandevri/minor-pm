@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background: url('../img/background.png') repeat center;
+  background: url('/img/background.png') repeat center;
   margin: 0;
 }
 
