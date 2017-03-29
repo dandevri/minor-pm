@@ -2,8 +2,10 @@ var store = require('./store');
 
 var sections = {
   clearList: function() {
-    var list = document.querySelector('body > section');
-    list.parentNode.removeChild(list);
+    var list = document.querySelecgit tor('body > section');
+    if (list) {
+      list.parentNode.removeChild(list);
+    }
   },
 
   createStandingsList: function(sort) {
