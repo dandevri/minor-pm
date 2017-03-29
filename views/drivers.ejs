@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <% include head.ejs %>
+  </head>
+  <body>
+    <% include header.ejs %>
+
+    <ol>
+      <% drivers.forEach(function(driver) { %>
+        <li>
+          <h2><%= driver.code %></h2>
+          <p><%= driver.givenName %></p>
+        </li>
+      <% }) %>
+    </ol>
+    
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <% include head.ejs %>
+  </head>
+  <body>
+    <% include header.ejs %>
+
+    <% races.forEach(function(race) { %>
+      <h2><%= race.raceName %></h2>
+    <% }) %>
+
+  </body>
+</html>
