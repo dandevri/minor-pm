@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,700i');
-
 /* ==========================================================================
    Reset
    ========================================================================== */
@@ -12,7 +10,7 @@ html {
 }
 
 body {
-  background: url('../img/background.png') repeat center;
+  background: url('/img/background.png') repeat center;
   margin: 0;
 }
 

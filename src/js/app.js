@@ -8,6 +8,3 @@ document.querySelectorAll('a')
 .forEach(function(a) {
   a.setAttribute('href', "#" + a.getAttribute('href'));
 });
-
-var removeStandings = document.querySelector('body > section');
-removeStandings.parentNode.removeChild(removeStandings);
