@@ -5,15 +5,15 @@
   </head>
   <body>
     <% include header.ejs %>
+    <% include spinner.ejs %>
 
-    <ol>
+
       <% drivers.forEach(function(driver) { %>
-        <li>
+        <article>
           <h2><%= driver.code %></h2>
           <p><%= driver.givenName %></p>
-        </li>
+        </article>
       <% }) %>
-    </ol>
-    
+
   </body>
 </html>

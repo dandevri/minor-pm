@@ -1,5 +1,6 @@
 var request = require('./request');
 var sections = require('./sections');
+var routie = require('./routie.js')
 
 var routes = {
   init: function() {

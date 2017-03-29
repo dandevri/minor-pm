@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "build": "browserify public/js/app.js -o public/js/bundle.js --debug",
     "watchify": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,6 +26,7 @@
     "request": "^2.81.0"
   },
   "devDependencies": {
+    "browserify": "^14.1.0",
     "nodemon": "^1.11.0"
   }
 }

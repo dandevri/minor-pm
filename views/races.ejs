@@ -5,9 +5,12 @@
   </head>
   <body>
     <% include header.ejs %>
+    <% include spinner.ejs %>
 
     <% races.forEach(function(race) { %>
-      <h2><%= race.raceName %></h2>
+      <article>
+        <h2><%= race.raceName %></h2>
+      </article>
     <% }) %>
 
   </body>

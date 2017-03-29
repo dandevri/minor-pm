@@ -1,11 +1,12 @@
 var sections = require('./sections');
+var store = require('./store');
 
 var request = {
   getDriverStandings: function() {  // Request driver standing .json
     this.doRequest(
       'http://ergast.com/api/f1/2016/driverStandings.json',
       function(response) {
-        app.standingsArray = response.MRData.StandingsTable.StandingsLists[0].DriverStandings;
+        store.standingsArray = response.MRData.StandingsTable.StandingsLists[0].DriverStandings;
         sections.createStandingsList();
       }
     );

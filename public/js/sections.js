@@ -1,7 +1,9 @@
+var store = require('./store');
+
 var sections = {
 
   createStandingsList: function(sort) {
-    var dataArray = app.standingsArray;
+    var dataArray = store.standingsArray;
 
     // MDN example;
     if(sort === 'alfabetic') { // Sort alfabetic
@@ -51,7 +53,7 @@ var sections = {
   },
 
   createDriversList: function(dataArray) {
-    app.driversArray = dataArray; // save for later use
+    store.driversArray = dataArray; // save for later use
     // Hide other list
     document.querySelector('.list').innerHTML = " ";
     document.querySelector('.sort').innerHTML = " ";
@@ -69,7 +71,7 @@ var sections = {
   },
 
   createDriverOverlay: function(id) { // Create the overlay
-    var driver = app.driversArray[id];
+    var driver = store.driversArray[id];
     document.querySelector('.overlay').innerHTML = `
     <div class="dialog">
       <p>First name: ${driver.givenName}</p>
