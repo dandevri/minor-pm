@@ -1,0 +1,17 @@
+{
+  "name": "Formula 1 - Dashboard",
+  "short_name": "Formula 1",
+  "description": "Show a formula 1 dashboard for the upcoming season.",
+  "lang": "en",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000",
+  "theme_color": " #d31411",
+  "icons": [
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
