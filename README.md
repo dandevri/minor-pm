@@ -65,7 +65,7 @@ API_URL_RACESCHEDULE=http://ergast.com/api/f1/2017.json
 
 ## ⚡️Performance
 * I've compressed most images using [`sketch image compressor`](https://github.com/BohemianCoding/sketch-image-compressor) and used inline svg with the data uri.
-* With [`npm compression`](https://www.npmjs.com/package/compression) I enabled gZip compression.
+* With [`npm compression`](https://www.npmjs.com/package/compression) I enabled Gzip compression.
 * With [`browserify`](http://browserify.org/) and [`UglifyJS`](https://github.com/mishoo/UglifyJS) I've bundled and minified the JavaScript file.
 * Used [`cleanCSS`](https://github.com/jakubpawlowicz/clean-css) to minify the CSS.
 
