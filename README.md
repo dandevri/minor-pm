@@ -22,6 +22,7 @@ The upcoming Formula 1 season (2017) is right around the corner. To give race fa
 * `express`: Web application framework used for basic routing
 * `request:` To make http calls
 * `ejs`: Client side templating engine
+* `ergast developer api`: [Formula 1 API](http://ergast.com/mrd/) (returns .json)
 
 
 ### Run
@@ -43,7 +44,7 @@ $ npm install
 $ npm start
 ```
 You should see the following message:
-> The server is runnong on: http://localhost:1337
+> The server is running on: http://localhost:1337
 
 4. Expose the server
 ```
