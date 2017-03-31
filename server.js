@@ -46,5 +46,5 @@ app.get('/races', function(req, res) {
 })
 
 var server = app.listen(1337, function () {
-   console.log('The server is running.')
+   console.log('The server is running on: http://localhost:1337')
 })
