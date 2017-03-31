@@ -18,7 +18,7 @@ The upcoming Formula 1 season (2017) is right around the corner. To give race fa
 
 ## ⚙ Installation & Development
 
-### Core Dependencies
+### Built With
 * `express`: Web application framework used for basic routing
 * `request:` To make http calls
 * `ejs`: Client side templating engine
@@ -75,6 +75,14 @@ API_URL_RACESCHEDULE=http://ergast.com/api/f1/2017.json
 ## Contributing
 * For commit messages: [GitMoji]() is used.
 * Follows Necolas' Idiomatic-CSS principles [Idiomatic CSS](https://github.com/necolas/idiomatic-css)
+
+## Versioning
+Please refer to [SemVer](http://semver.org/) to read more about versioning.
+
+## Acknowledgements
+* Tutus Wormer *@wooorm* to have a shoulder to cry on.
+* Joost Faber *@joostf* for mental support.
+* My parents for cooking dinner everytime I came home after a long day of work.
 
 ## License
 
