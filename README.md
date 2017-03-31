@@ -1,5 +1,7 @@
 # Formula 1 - Dashboard 🏎
 
+![GitHub Banner](github/github_banner.png)
+
 ## 📖 Introduction
 This Formula 1 Dashboard SPA shows you the the latest statistics about:
 
