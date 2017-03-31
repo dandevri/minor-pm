@@ -1,4 +1,24 @@
-# Minor Performance Matters
+# Formula 1 - Dashboard
+
+## What
+
+
+
+## Installation & Development
+
+### Dependencies
+* `express`
+* `request`
+* `ejs`: Used for templating
+
+
+### Run
+
+To run this project locally:
+
+Clone the repo to your computer and `change directory` into the folder.
+``
+
 
 ## Job Story
 
